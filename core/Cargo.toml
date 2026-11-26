@@ -1,0 +1,17 @@
+[package]
+name = "veridex-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Shared data layer for the Veridex scholarly search engine"
+
+[dependencies]
+sqlx.workspace = true
+serde.workspace = true
+url.workspace = true
+tracing.workspace = true
+anyhow.workspace = true
+scraper.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true

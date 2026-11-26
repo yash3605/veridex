@@ -1,0 +1,18 @@
+[package]
+name = "web_weaver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+veridex-core = { path = "../core" }
+governor.workspace = true
+sqlx.workspace = true
+tokio.workspace = true
+reqwest.workspace = true
+clap.workspace = true
+scraper.workspace = true
+url.workspace = true
+robotstxt.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+anyhow.workspace = true

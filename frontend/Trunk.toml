@@ -1,0 +1,12 @@
+[build]
+target = "index.html"
+
+[serve]
+address = "127.0.0.1"
+port = 3000
+open = false
+
+# Dev-time proxy: the SPA calls the API with relative URLs ("/api/...") and
+# Trunk forwards them to the backend, so there is no CORS or origin mismatch.
+[[proxy]]
+backend = "http://127.0.0.1:8080/api/"

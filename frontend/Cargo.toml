@@ -1,0 +1,44 @@
+[package]
+name = "veridex-frontend"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# Standalone workspace: the WASM app is built by Trunk and kept out of the
+# backend workspace so root `cargo test` / clippy stay fast and clean.
+[workspace]
+
+[dependencies]
+leptos = { version = "0.8", features = ["csr"] }
+gloo-net = { version = "0.6", features = ["http"] }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+console_error_panic_hook = "0.1"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "Window",
+  "Document",
+  "Location",
+  "Storage",
+  "Event",
+  "EventTarget",
+  "Blob",
+  "BlobPropertyBag",
+  "HtmlAnchorElement",
+  "HtmlElement",
+  "Element",
+  "Node",
+  "Url",
+  "CssStyleDeclaration",
+  "SubmitEvent",
+]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1

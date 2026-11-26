@@ -1,0 +1,41 @@
+# Scholarly seed URLs for Veridex.
+# One URL per line; lines starting with '#' are ignored.
+#
+# These seeds favour primary/reference material: encyclopedias of
+# philosophy and science, open repositories, standards bodies and
+# intergovernmental data sources. The crawler's robots.txt policy and
+# rate limiter still apply per host.
+
+# --- Stanford Encyclopedia of Philosophy (test batch, mutually linked) ---
+https://plato.stanford.edu/entries/scientific-method/
+https://plato.stanford.edu/entries/epistemology/
+https://plato.stanford.edu/entries/logic-classical/
+https://plato.stanford.edu/entries/causation-metaphysics/
+https://plato.stanford.edu/entries/scientific-realism/
+https://plato.stanford.edu/entries/induction-problem/
+https://plato.stanford.edu/entries/pseudo-science/
+https://plato.stanford.edu/entries/bayes-theorem/
+https://plato.stanford.edu/entries/confirmation/
+https://plato.stanford.edu/entries/scientific-reduction/
+https://plato.stanford.edu/entries/structure-scientific-theories/
+https://plato.stanford.edu/entries/properties-emergent/
+https://plato.stanford.edu/entries/scientific-underdetermination/
+
+# --- Broader starting points (uncomment or extend for larger crawls) ---
+# https://plato.stanford.edu/entries/          # full index (~1700 entries)
+# https://iep.utm.edu/                         # Internet Encyclopedia of Philosophy
+# https://arxiv.org/list/cs.CL/recent          # computational linguistics preprints
+# https://pubmed.ncbi.nlm.nih.gov/             # biomedical literature
+# https://www.ncbi.nlm.nih.gov/pmc/            # open-access biomedical full text
+# https://journals.plos.org/plosone/           # open-access journal
+# https://ourworldindata.org/                  # curated global statistics
+# https://www.who.int/                         # World Health Organization
+# https://www.ipcc.ch/                         # climate assessment reports
+# https://www.oecd.org/                        # economic & social data
+# https://www.worldbank.org/                   # development data
+# https://www.iso.org/                         # standards catalogue
+# https://www.w3.org/Protocols/                # web standards
+# https://ocw.mit.edu/                         # MIT OpenCourseWare
+# https://mathworld.wolfram.com/               # mathematical reference
+# https://ideas.repec.org/                     # economics research papers
+# https://doaj.org/                            # directory of open access journals
